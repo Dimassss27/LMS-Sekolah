@@ -54,7 +54,10 @@ export default function MateriDetail() {
       </View>
 
       {/* QUIZ */}
-      <TouchableOpacity style={styles.quiz}>
+      <TouchableOpacity
+        style={styles.quiz}
+        onPress={() => router.push("/quiz")}
+      >
         <Text style={styles.quizSmall}>KNOWLEDGE CHECK</Text>
         <Text style={styles.quizTitle}>Take Quiz</Text>
       </TouchableOpacity>
@@ -123,6 +126,7 @@ const styles = StyleSheet.create({
   videoCard: {
     borderRadius: 20,
     overflow: "hidden",
+    marginTop: 15,
     marginBottom: 15,
   },
 
